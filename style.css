@@ -1,0 +1,267 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #262626;
+}
+body {
+	background: #f2f2f2;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background: #f2f2f2;
+	width: 100%;	
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 100px;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+header *, .resume a {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*styles home page*/
+
+
+.lBlock {
+	background: #b4cbe4;
+	min-width: 320px;
+	width: 40%;
+	height: 150%;
+	position: absolute;
+	z-index: -1;
+	left: 0px;
+	top: 0px;
+}
+
+.centerBlock {
+	position: relative;
+	z-index: 2;
+	top: 200px;
+	min-width: 740px;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.leftCenterBlock{
+	width: 320px;
+	position: absolute;
+	left: 0;
+	background: #dae5f1;
+	height:450px;
+	box-shadow: -11.31px 11.31px 17px 0px 
+		rgba(138,131,124,0.23);
+	text-align: center;
+}
+
+.imgdiv {
+	border-radius: 100px;
+	width: 200px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	background: white;
+	margin-top: 30px;
+}
+
+.imgdiv img {
+	width: 100%;
+}
+
+.fullName {
+	font-size: 15px;
+}
+
+.interBorder {
+	border-top: 2px solid black;
+	width: 15%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.jobName h2 {
+	font-weight: normal;
+}
+
+.resume {
+	width: 420px;
+	position: absolute;
+	right: 0;
+	top: -10px;
+	padding: 30px;
+}
+.resume h2 {
+	font-size: 40px;
+}
+.resume p {
+	font-size: 18px;
+}
+
+/*styles cv page*/
+
+#cv-main {
+	background: #b4cbe4;
+}
+
+#cv-main section {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+#cv-main section div.CvContainer {
+	box-shadow: -11.31px 11.31px 17px 0px 
+		rgba(138,131,124,0.23);
+}
+
+#cv-main h2 {
+	font-size: 27px;
+}
+#cv-main h3 {
+	font-size: 20px;
+}
+#cv-main li, #cv-main p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.cvTitle {
+	margin-top: 100px;
+	padding-top: 100px;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 100px;
+}
+.CvContainer {
+	display: flex;
+	padding: 10px;
+	margin-bottom: 30px;
+	background: #f2f2f2;
+}
+.CvContainer.reverse {
+	flex-direction: row-reverse;
+}
+.col1, .col2, .col3 {
+	flex: 1;
+}
+.CvContainer div {
+	padding: 5px;
+}
+
+/* Styles pour le diagramme */
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.skill {
+    flex: 1;
+    text-align: center;
+}
+
+.skill-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #0074D9;
+    border-radius: 5px;
+}
+
+/*adapt*/
+
+@media only screen and (max-width: 1320px) {
+	#cv-main section {
+	width: 55%;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	#cv-main section {
+	width: 60%;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	/*page cv*/
+	#cv-main section {
+	width: 65%;
+	}
+	.CvContainer {
+	display: block;
+	}
+
+	.qualites img {
+		display: block;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/*page home*/
+	.lBlock {
+	width: 100%;
+	height: 150%;
+	top: 400px;
+	}
+
+	.centerBlock {
+	position: relative;
+	z-index: 2;
+	top: 200px;
+	min-width: 320px;
+	width: 320px;
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+	.leftCenterBlock{
+	width: 320px;
+	position: relative;
+	left: 0;
+	height:450px;
+	padding: 10px;
+	}
+
+	.resume {
+	width: 320px;
+	position: relative;
+	right: 0;
+	left: 0;
+	top: -10px;
+	padding: 30px;
+	}	
+	.resume h2 {
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+
