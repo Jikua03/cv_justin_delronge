@@ -160,6 +160,9 @@ img {
 .CvContainer div {
 	padding: 5px;
 }
+ul.descriptionCv {
+	list-style: none;
+}
 
 /* Styles pour le diagramme */
 
