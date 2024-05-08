@@ -164,6 +164,9 @@ ul.descriptionCv {
 	list-style: none;
 }
 
+	
+
+
 /* Styles pour le diagramme */
 
 .chart {
@@ -172,8 +175,7 @@ ul.descriptionCv {
     align-items: center;
     width: 100%;
     height: 70px;
-    background-color: white;
-    border-radius: 8px;
+    background-color: #f2f2f2;
     padding: 10px;
 }
 
