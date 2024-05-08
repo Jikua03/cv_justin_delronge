@@ -177,6 +177,8 @@ ul.descriptionCv {
     height: 70px;
     background-color: #f2f2f2;
     padding: 10px;
+    box-shadow: -11.31px 11.31px 17px 0px 
+		rgba(138,131,124,0.23);
 }
 
 .skill {
